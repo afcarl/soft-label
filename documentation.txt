@@ -1,0 +1,34 @@
+
+
+command
+
+./run.py <dataset> 
+-r1 <regularization_to_output>  
+-r2 <hypothesis_regularization>
+--whitening 
+--adagrad ( defaults to regular SGD)
+--softening ( defaults to none )
+
+
+
+
+# use optparse to get commands out
+
+datasets will live in ./datasets/<dataset>.csv
+metadata will live in ./datasets/<dataset>.info
+
+
+better to cross validate and choose different regularization values for each hypothesis classifier
+
+Evaluation metrics to report:
+Accuracy
+F-Measure
+
+
+utilities
+F measure calculator
+F measure thresholder
+sigmoid
+inverse sigmoid
+sigmoid derivative
+loss functions
